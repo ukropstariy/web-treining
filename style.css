@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #373737;
+}
+body {
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    background: #f7f7f7;
+}
+
+header {
+    /*height: 180px;*/
+    background: white;
+    border-bottom: 3px solid #e7e7e7;
+}
+
+.container {
+    max-width: 960px;
+    height: 75px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    
+}
+
+.logo {
+    flex-basis: 40%;
+    text-decoration: none;
+}
+
+.logo span {
+    
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgba(0,0,0,.4);
+    font-weight: 600;
+}
+
+.logo span:nth-child(odd) {
+    background: #EF5A42;
+}
+
+.logo span:nth-child(even) {
+    background: #F8B763;
+}
+
+.menu {
+    font-weight: 600;
+    display: flex;
+    flex-basis: 35%;
+}
+
+.menu li a:hover {
+    transition: .5s ease-in-out;
+    color: red;
+
+}
+
+form {
+    padding-left: 25px;
+   
+}
+
+.menu li a {
+    padding: 20px;
+    text-decoration: none;
+}
+
+.menu li {
+    list-style: none;
+}
+
+form input {
+    max-width: 145px;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    padding: 20px;
+}
+
+button i {
+    color: red;
+    
+}
+form button {
+    background: none;
+    border: none; 
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 30px auto;
+}
+
+.list-1, .image a img  {
+    max-width: 600px;
+    max-height: 400px;
+    width: 100%;  
+}
+
+.list-1 p {
+    color: #EF5A42;
+    margin-top: 20px;
+}
+
+p.header-content {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+    font-size: 20px;
+}
+
+.list-content p {
+    font-size: 14px;
+    color: #000; 
+}
+
+.content-footer {
+    margin-top: 20px;
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.more {
+    position: relative;
+    display: inline-block;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 44px;
+    padding: 0 22px;
+    background: #3C3D41;
+    letter-spacing: 0.1em;
+    white-space: nowrap; 
+    text-decoration: none;
+}
+
+.more::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0;
+    border: solid transparent;
+    border-width: 22px 18px;
+    border-left-color: #3C3D41;
+    transform: translateX(100%);
+}
+
+.social {
+    max-width: 200px;
+    height: 50px;
+    flex-basis: 30%;
+}
+
